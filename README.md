@@ -1,2 +1,2 @@
 # templates
-KiCad roject templates
+KiCad project templates
