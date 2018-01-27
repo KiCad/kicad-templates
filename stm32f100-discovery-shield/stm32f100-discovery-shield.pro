@@ -1,4 +1,4 @@
-update=13/12/2016 09:10:33
+update=Son 28 Jän 2018 00:22:13 CET
 version=1
 last_client=kicad
 [general]
@@ -41,19 +41,3 @@ LibName12=valves
 [eeschema]
 version=1
 LibDir=
-[eeschema/libraries]
-LibName1=stm32f100-discovery-shield
-LibName2=stm32
-LibName3=power
-LibName4=device
-LibName5=transistors
-LibName6=conn
-LibName7=linear
-LibName8=regul
-LibName9=74xx
-LibName10=adc-dac
-LibName11=memory
-LibName12=microcontrollers
-LibName13=microchip
-LibName14=analog_switches
-LibName15=display
