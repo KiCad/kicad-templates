@@ -1,4 +1,4 @@
-update=Fri 30 Dec 2016 09:08:25 PM CST
+update=Sam 27 Jän 2018 23:01:05 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,6 +27,4 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../library
-[eeschema/libraries]
-LibName1=mechanical
+LibDir=
