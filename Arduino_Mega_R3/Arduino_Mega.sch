@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:Arduino_Mega-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -199,7 +170,7 @@ Shield for Arduino Mega Rev 3
 Text Notes 10700 1000 0    60   ~ 0
 Holes
 $Comp
-L CONN_01X01 P8
+L Connector_Generic:Conn_01x01 P8
 U 1 1 56D70B71
 P 10600 650
 F 0 "P8" V 10700 650 31  0000 C CNN
@@ -210,7 +181,7 @@ F 3 "" H 10600 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P9
+L Connector_Generic:Conn_01x01 P9
 U 1 1 56D70C9B
 P 10700 650
 F 0 "P9" V 10800 650 31  0000 C CNN
@@ -221,7 +192,7 @@ F 3 "" H 10700 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P10
+L Connector_Generic:Conn_01x01 P10
 U 1 1 56D70CE6
 P 10800 650
 F 0 "P10" V 10900 650 31  0000 C CNN
@@ -232,7 +203,7 @@ F 3 "" H 10800 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P11
+L Connector_Generic:Conn_01x01 P11
 U 1 1 56D70D2C
 P 10900 650
 F 0 "P11" V 11000 650 31  0000 C CNN
@@ -243,7 +214,7 @@ F 3 "" H 10900 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P12
+L Connector_Generic:Conn_01x01 P12
 U 1 1 56D711A2
 P 11000 650
 F 0 "P12" V 11100 650 31  0000 C CNN
@@ -254,7 +225,7 @@ F 3 "" H 11000 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P13
+L Connector_Generic:Conn_01x01 P13
 U 1 1 56D711F0
 P 11100 650
 F 0 "P13" V 11200 650 31  0000 C CNN
@@ -271,24 +242,24 @@ NoConn ~ 10900 850
 NoConn ~ 11000 850 
 NoConn ~ 11100 850 
 $Comp
-L CONN_01X08 P2
+L Connector_Generic:Conn_01x08 P2
 U 1 1 56D71773
-P 9550 1700
-F 0 "P2" H 9550 2150 50  0000 C CNN
-F 1 "Power" V 9650 1700 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9550 1700 50  0001 C CNN
-F 3 "" H 9550 1700 50  0000 C CNN
-	1    9550 1700
+P 9550 1650
+F 0 "P2" H 9550 2050 50  0000 C CNN
+F 1 "Power" V 9650 1650 50  0000 C CNN
+F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9550 1650 50  0001 C CNN
+F 3 "" H 9550 1650 50  0000 C CNN
+	1    9550 1650
 	1    0    0    -1  
 $EndComp
 Text Notes 9650 1350 0    60   ~ 0
 1
 $Comp
-L +3.3V #PWR01
+L power:+3V3 #PWR01
 U 1 1 56D71AA9
 P 9100 1200
 F 0 "#PWR01" H 9100 1050 50  0001 C CNN
-F 1 "+3.3V" H 9100 1340 50  0000 C CNN
+F 1 "+3.3V" V 9100 1450 50  0000 C CNN
 F 2 "" H 9100 1200 50  0000 C CNN
 F 3 "" H 9100 1200 50  0000 C CNN
 	1    9100 1200
@@ -297,18 +268,18 @@ $EndComp
 Text Label 8600 1550 0    60   ~ 0
 Reset
 $Comp
-L +5V #PWR02
+L power:+5V #PWR02
 U 1 1 56D71D10
 P 9000 1050
 F 0 "#PWR02" H 9000 900 50  0001 C CNN
-F 1 "+5V" H 9000 1190 50  0000 C CNN
+F 1 "+5V" V 9000 1250 50  0000 C CNN
 F 2 "" H 9000 1050 50  0000 C CNN
 F 3 "" H 9000 1050 50  0000 C CNN
 	1    9000 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 56D721E6
 P 9250 2150
 F 0 "#PWR03" H 9250 1900 50  0001 C CNN
@@ -319,18 +290,18 @@ F 3 "" H 9250 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X10 P5
+L Connector_Generic:Conn_01x10 P5
 U 1 1 56D72368
-P 9950 1600
-F 0 "P5" H 9950 2150 50  0000 C CNN
-F 1 "PWM" V 10050 1600 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x10" H 9950 1600 50  0001 C CNN
-F 3 "" H 9950 1600 50  0000 C CNN
-	1    9950 1600
+P 9950 1550
+F 0 "P5" H 9950 2050 50  0000 C CNN
+F 1 "PWM" V 10050 1550 50  0000 C CNN
+F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x10" H 9950 1550 50  0001 C CNN
+F 3 "" H 9950 1550 50  0000 C CNN
+	1    9950 1550
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 56D72A3D
 P 10250 2150
 F 0 "#PWR04" H 10250 1900 50  0001 C CNN
@@ -341,58 +312,58 @@ F 3 "" H 10250 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X08 P3
+L Connector_Generic:Conn_01x08 P3
 U 1 1 56D72F1C
-P 9550 2800
-F 0 "P3" H 9550 3250 50  0000 C CNN
-F 1 "Analog" V 9650 2800 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9550 2800 50  0001 C CNN
-F 3 "" H 9550 2800 50  0000 C CNN
-	1    9550 2800
+P 9550 2750
+F 0 "P3" H 9550 3150 50  0000 C CNN
+F 1 "Analog" V 9650 2750 50  0000 C CNN
+F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9550 2750 50  0001 C CNN
+F 3 "" H 9550 2750 50  0000 C CNN
+	1    9550 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X08 P6
+L Connector_Generic:Conn_01x08 P6
 U 1 1 56D734D0
-P 9950 2800
-F 0 "P6" H 9950 3250 50  0000 C CNN
-F 1 "PWM" V 10050 2800 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9950 2800 50  0001 C CNN
-F 3 "" H 9950 2800 50  0000 C CNN
-	1    9950 2800
+P 9950 2750
+F 0 "P6" H 9950 3150 50  0000 C CNN
+F 1 "PWM" V 10050 2750 50  0000 C CNN
+F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9950 2750 50  0001 C CNN
+F 3 "" H 9950 2750 50  0000 C CNN
+	1    9950 2750
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X08 P4
+L Connector_Generic:Conn_01x08 P4
 U 1 1 56D73A0E
-P 9550 3750
-F 0 "P4" H 9550 4200 50  0000 C CNN
-F 1 "Analog" V 9650 3750 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9550 3750 50  0001 C CNN
-F 3 "" H 9550 3750 50  0000 C CNN
-	1    9550 3750
+P 9550 3700
+F 0 "P4" H 9550 4100 50  0000 C CNN
+F 1 "Analog" V 9650 3700 50  0000 C CNN
+F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9550 3700 50  0001 C CNN
+F 3 "" H 9550 3700 50  0000 C CNN
+	1    9550 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X08 P7
+L Connector_Generic:Conn_01x08 P7
 U 1 1 56D73F2C
-P 9950 3750
-F 0 "P7" H 9950 4200 50  0000 C CNN
-F 1 "Communication" V 10050 3750 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9950 3750 50  0001 C CNN
-F 3 "" H 9950 3750 50  0000 C CNN
-	1    9950 3750
+P 9950 3700
+F 0 "P7" H 9950 4100 50  0000 C CNN
+F 1 "Communication" V 10050 3700 50  0000 C CNN
+F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_1x08" H 9950 3700 50  0001 C CNN
+F 3 "" H 9950 3700 50  0000 C CNN
+	1    9950 3700
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_02X18 P1
+L Connector_Generic:Conn_02x18_Odd_Even P1
 U 1 1 56D743B5
-P 9750 5100
-F 0 "P1" H 9750 6050 50  0000 C CNN
-F 1 "Digital" V 9750 5100 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_2x18" H 9750 4050 50  0001 C CNN
-F 3 "" H 9750 4050 50  0000 C CNN
-	1    9750 5100
+P 9700 5050
+F 0 "P1" H 9700 6000 50  0000 C CNN
+F 1 "Digital" V 9700 5050 50  0000 C CNN
+F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_2x18" H 9700 4000 50  0001 C CNN
+F 3 "" H 9700 4000 50  0000 C CNN
+	1    9700 5050
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -583,7 +554,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 4850 8650 4850
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 56D758F6
 P 8650 5750
 F 0 "#PWR05" H 8650 5500 50  0001 C CNN
@@ -601,7 +572,7 @@ Wire Wire Line
 Wire Wire Line
 	10750 4850 10600 4850
 $Comp
-L +5V #PWR06
+L power:+5V #PWR06
 U 1 1 56D75AB8
 P 10750 4550
 F 0 "#PWR06" H 10750 4400 50  0001 C CNN
