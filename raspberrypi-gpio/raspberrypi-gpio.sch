@@ -1,27 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:opto
+EESchema Schematic File Version 4
 LIBS:raspberrypi-gpio-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -36,133 +15,133 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_13X2 P1
+L Connector_Generic:Conn_02x13_Odd_Even P1
 U 1 1 50A55ABA
 P 2400 1800
 F 0 "P1" H 2400 2500 60  0000 C CNN
-F 1 "CONN_13X2" V 2400 1800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x13" H 2400 1100 30  0000 C CNN
+F 1 "CONN_13X2" V 2450 1850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 2200 1100 30  0001 C CNN
 F 3 "" H 2400 1800 60  0001 C CNN
 	1    2400 1800
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR01
+L power:+3V3 #PWR01
 U 1 1 50A55B18
-P 1900 1050
-F 0 "#PWR01" H 1900 900 50  0001 C CNN
-F 1 "+3.3V" H 1900 1190 50  0000 C CNN
-F 2 "" H 1900 1050 50  0000 C CNN
-F 3 "" H 1900 1050 50  0000 C CNN
-	1    1900 1050
+P 2100 1050
+F 0 "#PWR01" H 2100 900 50  0001 C CNN
+F 1 "+3.3V" H 2100 1190 50  0000 C CNN
+F 2 "" H 2100 1050 50  0000 C CNN
+F 3 "" H 2100 1050 50  0000 C CNN
+	1    2100 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 1050 1900 1200
+	2100 1050 2100 1200
 Wire Wire Line
-	1900 1200 2000 1200
+	2100 1200 2200 1200
 $Comp
-L +5V #PWR02
+L power:+5V #PWR02
 U 1 1 50A55B2E
-P 2900 1050
-F 0 "#PWR02" H 2900 900 50  0001 C CNN
-F 1 "+5V" H 2900 1190 50  0000 C CNN
-F 2 "" H 2900 1050 50  0000 C CNN
-F 3 "" H 2900 1050 50  0000 C CNN
-	1    2900 1050
+P 2800 1050
+F 0 "#PWR02" H 2800 900 50  0001 C CNN
+F 1 "+5V" H 2800 1190 50  0000 C CNN
+F 2 "" H 2800 1050 50  0000 C CNN
+F 3 "" H 2800 1050 50  0000 C CNN
+	1    2800 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 1050 2900 1200
+	2800 1050 2800 1200
 Wire Wire Line
-	2900 1200 2800 1200
-NoConn ~ 2800 1300
+	2800 1200 2700 1200
+NoConn ~ 2700 1300
 Wire Wire Line
-	2000 1300 1250 1300
+	2200 1300 1450 1300
 Wire Wire Line
-	2000 1400 1250 1400
-Text Label 1250 1300 0    60   ~ 0
+	2200 1400 1450 1400
+Text Label 1450 1300 0    60   ~ 0
 GPIO0(SDA)
-Text Label 1250 1400 0    60   ~ 0
+Text Label 1450 1400 0    60   ~ 0
 GPIO1(SCL)
 Wire Wire Line
-	2000 1500 1250 1500
-Text Label 1250 1500 0    60   ~ 0
+	2200 1500 1450 1500
+Text Label 1450 1500 0    60   ~ 0
 GPIO4
-NoConn ~ 2000 1600
+NoConn ~ 2200 1600
 Wire Wire Line
-	2000 1700 1250 1700
+	2200 1700 1450 1700
 Wire Wire Line
-	2000 1800 1250 1800
+	2200 1800 1450 1800
 Wire Wire Line
-	2000 1900 1250 1900
-Text Label 1250 1700 0    60   ~ 0
+	2200 1900 1450 1900
+Text Label 1450 1700 0    60   ~ 0
 GPIO17
-Text Label 1250 1800 0    60   ~ 0
+Text Label 1450 1800 0    60   ~ 0
 GPIO21
-Text Label 1250 1900 0    60   ~ 0
+Text Label 1450 1900 0    60   ~ 0
 GPIO22
-NoConn ~ 2000 2000
+NoConn ~ 2200 2000
 Wire Wire Line
-	2000 2100 1250 2100
+	2200 2100 1450 2100
 Wire Wire Line
-	2000 2200 1250 2200
+	2200 2200 1450 2200
 Wire Wire Line
-	2000 2300 1250 2300
-Text Label 1250 2100 0    60   ~ 0
+	2200 2300 1450 2300
+Text Label 1450 2100 0    60   ~ 0
 GPIO10(MOSI)
-Text Label 1250 2200 0    60   ~ 0
+Text Label 1450 2200 0    60   ~ 0
 GPIO9(MISO)
-Text Label 1250 2300 0    60   ~ 0
+Text Label 1450 2300 0    60   ~ 0
 GPIO11(SCLK)
-NoConn ~ 2000 2400
+NoConn ~ 2200 2400
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 50A55C3F
-P 2900 2500
-F 0 "#PWR03" H 2900 2250 50  0001 C CNN
-F 1 "GND" H 2900 2350 50  0000 C CNN
-F 2 "" H 2900 2500 50  0000 C CNN
-F 3 "" H 2900 2500 50  0000 C CNN
-	1    2900 2500
+P 2800 2500
+F 0 "#PWR03" H 2800 2250 50  0001 C CNN
+F 1 "GND" H 2800 2350 50  0000 C CNN
+F 2 "" H 2800 2500 50  0000 C CNN
+F 3 "" H 2800 2500 50  0000 C CNN
+	1    2800 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 2500 2900 1400
+	2800 2500 2800 1400
 Wire Wire Line
-	2900 1400 2800 1400
+	2800 1400 2700 1400
 Wire Wire Line
-	2800 1500 3500 1500
+	2700 1500 3400 1500
 Wire Wire Line
-	2800 1600 3500 1600
-Text Label 3500 1500 2    60   ~ 0
+	2700 1600 3400 1600
+Text Label 3400 1500 2    60   ~ 0
 TXD
-Text Label 3500 1600 2    60   ~ 0
+Text Label 3400 1600 2    60   ~ 0
 RXD
 Wire Wire Line
-	2800 1700 3500 1700
-Text Label 3500 1700 2    60   ~ 0
+	2700 1700 3400 1700
+Text Label 3400 1700 2    60   ~ 0
 GPIO18
-NoConn ~ 2800 1800
+NoConn ~ 2700 1800
 Wire Wire Line
-	2800 1900 3500 1900
+	2700 1900 3400 1900
 Wire Wire Line
-	2800 2000 3500 2000
-Text Label 3500 1900 2    60   ~ 0
+	2700 2000 3400 2000
+Text Label 3400 1900 2    60   ~ 0
 GPIO23
-Text Label 3500 2000 2    60   ~ 0
+Text Label 3400 2000 2    60   ~ 0
 GPIO24
-NoConn ~ 2800 2100
+NoConn ~ 2700 2100
 Wire Wire Line
-	2800 2200 3500 2200
-Text Label 3500 2200 2    60   ~ 0
+	2700 2200 3400 2200
+Text Label 3400 2200 2    60   ~ 0
 GPIO25
 Wire Wire Line
-	2800 2300 3500 2300
+	2700 2300 3400 2300
 Wire Wire Line
-	2800 2400 3500 2400
-Text Label 3500 2300 2    60   ~ 0
+	2700 2400 3400 2400
+Text Label 3400 2300 2    60   ~ 0
 GPIO8(CE0)
-Text Label 3500 2400 2    60   ~ 0
+Text Label 3400 2400 2    60   ~ 0
 GPIO7(CE1)
 $EndSCHEMATC
