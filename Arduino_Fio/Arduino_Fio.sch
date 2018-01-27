@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:Arduino_Fio-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -102,29 +73,29 @@ Wire Notes Line
 Wire Notes Line
 	8575 2675 11225 2675
 $Comp
-L CONN_01X14 P1
+L Connector_Generic:Conn_01x14 P1
 U 1 1 56D705A1
-P 9750 1700
-F 0 "P1" H 9750 2450 50  0000 C CNN
-F 1 "Digital" V 9850 1700 50  0000 C CNN
-F 2 "Socket_Arduino_Fio:Socket_Strip_Straight_1x14" H 9750 1700 50  0001 C CNN
-F 3 "" H 9750 1700 50  0000 C CNN
-	1    9750 1700
+P 9750 1650
+F 0 "P1" H 9750 2400 50  0000 C CNN
+F 1 "Digital" V 9850 1650 50  0000 C CNN
+F 2 "Socket_Arduino_Fio:Socket_Strip_Straight_1x14" H 9750 1650 50  0001 C CNN
+F 3 "" H 9750 1650 50  0000 C CNN
+	1    9750 1650
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X14 P2
+L Connector_Generic:Conn_01x14 P2
 U 1 1 56D706EC
-P 10100 1700
-F 0 "P2" H 10100 2450 50  0000 C CNN
-F 1 "Analog" V 10200 1700 50  0000 C CNN
-F 2 "Socket_Arduino_Fio:Socket_Strip_Straight_1x14" H 10100 1700 50  0001 C CNN
-F 3 "" H 10100 1700 50  0000 C CNN
-	1    10100 1700
+P 10100 1650
+F 0 "P2" H 10100 2400 50  0000 C CNN
+F 1 "Analog" V 10200 1650 50  0000 C CNN
+F 2 "Socket_Arduino_Fio:Socket_Strip_Straight_1x14" H 10100 1650 50  0001 C CNN
+F 3 "" H 10100 1650 50  0000 C CNN
+	1    10100 1650
 	-1   0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR01
+L power:+3.3V #PWR01
 U 1 1 56D707AD
 P 9450 950
 F 0 "#PWR01" H 9450 800 50  0001 C CNN
@@ -141,7 +112,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 1150 9450 1150
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 56D7084A
 P 9450 2450
 F 0 "#PWR02" H 9450 2200 50  0001 C CNN
@@ -182,7 +153,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 1250 10400 950 
 $Comp
-L +3.3V #PWR03
+L power:+3.3V #PWR03
 U 1 1 56D70A18
 P 10400 950
 F 0 "#PWR03" H 10400 800 50  0001 C CNN
@@ -197,7 +168,7 @@ Wire Wire Line
 Wire Wire Line
 	10500 1050 10500 2450
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 56D70A5E
 P 10500 2450
 F 0 "#PWR04" H 10500 2200 50  0001 C CNN
