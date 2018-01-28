@@ -57,19 +57,12 @@ set( template_lst
      raspberrypi-gpio
      raspberrypi-gpio-40pin
      stm32f100-discovery-shield
-     ti-stellaris-boosterpack40
      ti-stellaris-boosterpack40_min
     )
 
 foreach( tpl ${template_lst} )
     install( DIRECTORY ${tpl} DESTINATION ${KICAD_TEMPLATE} COMPONENT resources )
 endforeach()
-
-# The default project file.
-install( FILES kicad.pro
-    DESTINATION ${KICAD_TEMPLATE}
-    COMPONENT resources
-    )
 
 # The supplied worksheet templates.
 file( GLOB kicad_wks_files "*.kicad_wks" )
