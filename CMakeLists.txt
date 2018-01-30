@@ -42,22 +42,22 @@ add_custom_target( uninstall
 #
 # Please keep them in alpahbetical order to make maintaining the list easier.
 set( template_lst
-     Arduino_As_Uno_R3
      Arduino_Fio
      Arduino_Mega_R3
      Arduino_Micro
      Arduino_Mini
      Arduino_Nano
      Arduino_Pro_Mini
+     Arduino_Uno_R3
      BeagleBone-Black-Cape
      EuroCard160mmX100mm
      EuroCard160mmX100mm_holes
+     Hammond_1593K_Enclosure
      minnowboard-ls-lure
      raspberrypi_hat
      raspberrypi-gpio
      raspberrypi-gpio-40pin
      stm32f100-discovery-shield
-     ti-stellaris-boosterpack40
      ti-stellaris-boosterpack40_min
     )
 

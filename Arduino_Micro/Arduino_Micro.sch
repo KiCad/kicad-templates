@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:Arduino_Micro-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -111,7 +82,7 @@ Wire Notes Line
 Wire Notes Line
 	9875 650  9875 475 
 $Comp
-L CONN_01X17 P1
+L Connector_Generic:Conn_01x17 P1
 U 1 1 56D719DF
 P 9550 2050
 F 0 "P1" H 9550 2950 50  0000 C CNN
@@ -122,7 +93,7 @@ F 3 "" H 9550 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X17 P2
+L Connector_Generic:Conn_01x17 P2
 U 1 1 56D71A21
 P 9950 2050
 F 0 "P2" H 9950 2950 50  0000 C CNN
@@ -165,7 +136,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 2850 9350 2850
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 56D71E99
 P 9250 3000
 F 0 "#PWR01" H 9250 2750 50  0001 C CNN
@@ -190,7 +161,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 1750 10350 1100
 $Comp
-L +5V #PWR02
+L power:+5V #PWR02
 U 1 1 56D725B4
 P 10350 1100
 F 0 "#PWR02" H 10350 950 50  0001 C CNN
@@ -201,7 +172,7 @@ F 3 "" H 10350 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 56D727D3
 P 10250 3000
 F 0 "#PWR03" H 10250 2750 50  0001 C CNN
@@ -212,7 +183,7 @@ F 3 "" H 10250 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR04
+L power:+3V3 #PWR04
 U 1 1 56D72867
 P 10450 1000
 F 0 "#PWR04" H 10450 850 50  0001 C CNN
@@ -255,7 +226,7 @@ Wire Wire Line
 Wire Notes Line
 	8500 500  8500 3250
 $Comp
-L CONN_01X01 P3
+L Connector_Generic:Conn_01x01 P3
 U 1 1 56D72ED3
 P 10800 650
 F 0 "P3" V 10900 650 50  0000 C CNN
@@ -266,7 +237,7 @@ F 3 "" H 10800 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P4
+L Connector_Generic:Conn_01x01 P4
 U 1 1 56D72FBF
 P 10900 650
 F 0 "P4" V 11000 650 50  0000 C CNN
@@ -277,7 +248,7 @@ F 3 "" H 10900 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P5
+L Connector_Generic:Conn_01x01 P5
 U 1 1 56D72FE7
 P 11000 650
 F 0 "P5" V 11100 650 50  0000 C CNN
@@ -288,7 +259,7 @@ F 3 "" H 11000 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P6
+L Connector_Generic:Conn_01x01 P6
 U 1 1 56D73012
 P 11100 650
 F 0 "P6" V 11200 650 50  0000 C CNN

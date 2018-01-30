@@ -1,4 +1,4 @@
-update=13/12/2016 09:51:37
+update=Sam 27 Jän 2018 22:11:16 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -28,18 +28,3 @@ version=1
 [eeschema]
 version=1
 LibDir=
-[eeschema/libraries]
-LibName1=power
-LibName2=device
-LibName3=transistors
-LibName4=conn
-LibName5=linear
-LibName6=regul
-LibName7=74xx
-LibName8=adc-dac
-LibName9=xilinx
-LibName10=microcontrollers
-LibName11=microchip
-LibName12=analog_switches
-LibName13=motorola
-LibName14=texas

@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:mechanical
+EESchema Schematic File Version 4
 LIBS:minnowboard-ls-lure-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,18 +15,18 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_02X13 P1
+L Connector_Generic:Conn_02x13_Odd_Even P1
 U 1 1 576C994F
-P 2600 2350
-F 0 "P1" H 2600 3050 50  0000 C CNN
+P 2550 2350
+F 0 "P1" H 2550 3050 50  0000 C CNN
 F 1 "CONN_02X13" V 2600 2350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x13" H 2600 1200 50  0001 C CNN
-F 3 "" H 2600 1200 50  0000 C CNN
-	1    2600 2350
+F 2 "Pin_Headers:Pin_Header_Straight_2x13" H 2550 1200 50  0001 C CNN
+F 3 "" H 2550 1200 50  0000 C CNN
+	1    2550 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR3
+L power:GND #PWR3
 U 1 1 576DC243
 P 2950 3000
 F 0 "#PWR3" H 2950 2750 50  0001 C CNN
@@ -67,7 +37,7 @@ F 3 "" H 2950 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L power:GND #PWR2
 U 1 1 576DC271
 P 2250 3000
 F 0 "#PWR2" H 2250 2750 50  0001 C CNN
@@ -78,7 +48,7 @@ F 3 "" H 2250 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR4
+L power:+3.3V #PWR4
 U 1 1 576DC2D3
 P 3050 1650
 F 0 "#PWR4" H 3050 1500 50  0001 C CNN
@@ -89,7 +59,7 @@ F 3 "" H 3050 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR1
+L power:+5V #PWR1
 U 1 1 576DC2E9
 P 2150 1650
 F 0 "#PWR1" H 2150 1500 50  0001 C CNN
@@ -204,7 +174,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 1850 2350 1850
 $Comp
-L Mounting_Hole MK2
+L Mechanical:Mounting_Hole MK2
 U 1 1 58633372
 P 5350 7500
 F 0 "MK2" H 5350 7700 50  0000 C CNN
@@ -215,7 +185,7 @@ F 3 "" H 5350 7500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mounting_Hole MK1
+L Mechanical:Mounting_Hole MK1
 U 1 1 58633409
 P 4750 7500
 F 0 "MK1" H 4750 7700 50  0000 C CNN
@@ -226,7 +196,7 @@ F 3 "" H 4750 7500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mounting_Hole MK3
+L Mechanical:Mounting_Hole MK3
 U 1 1 58633454
 P 5950 7500
 F 0 "MK3" H 5950 7700 50  0000 C CNN
@@ -237,7 +207,7 @@ F 3 "" H 5950 7500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mounting_Hole MK4
+L Mechanical:Mounting_Hole MK4
 U 1 1 5863348E
 P 6550 7500
 F 0 "MK4" H 6550 7700 50  0000 C CNN
