@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 6)
     (tracks 0)
     (zones 0)
     (modules 5)
@@ -59,7 +59,7 @@
     (pad_drill 3.175)
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
-    (aux_axis_origin 0 0)
+    (aux_axis_origin 25.4 25.4)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -902,7 +902,19 @@
     (pad "" np_thru_hole circle (at 0 0) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
   )
 
-  (gr_text "Host Board Edge\n0.5mm Verical Clearance" (at 46.99 64.4652 270) (layer Cmts.User)
+  (dimension 78.105 (width 0.3) (layer Cmts.User)
+    (gr_text "3.0760 in" (at 21.395 64.4525 90) (layer Cmts.User)
+      (effects (font (size 1.5 1.5) (thickness 0.3)))
+    )
+    (feature1 (pts (xy 24.765 25.4) (xy 22.908579 25.4)))
+    (feature2 (pts (xy 24.765 103.5304) (xy 22.908579 103.5304)))
+    (crossbar (pts (xy 23.495 103.5304) (xy 23.495 25.4)))
+    (arrow1a (pts (xy 23.495 25.4) (xy 24.081421 26.526504)))
+    (arrow1b (pts (xy 23.495 25.4) (xy 22.908579 26.526504)))
+    (arrow2a (pts (xy 23.495 103.5304) (xy 24.081421 102.378496)))
+    (arrow2b (pts (xy 23.495 103.5304) (xy 22.908579 102.378496)))
+  )
+  (gr_text "Host Board Edge\n5mm Verical Clearance" (at 46.99 64.4652 270) (layer Cmts.User)
     (effects (font (size 1 1) (thickness 0.12)))
   )
   (gr_line (start 48.8442 25.4) (end 48.8442 103.5304) (layer Cmts.User) (width 0.2))
