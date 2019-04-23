@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.1)
 
   (general
     (thickness 1.6)
@@ -39,8 +39,6 @@
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
-    (segment_width 0.2)
-    (edge_width 0.15)
     (via_size 0.8)
     (via_drill 0.4)
     (via_min_size 0.4)
@@ -50,6 +48,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
+    (edge_width 0.15)
+    (segment_width 0.2)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -59,8 +59,8 @@
     (pad_drill 3.175)
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
-    (aux_axis_origin 25.4 25.4)
-    (visible_elements FFFFFF7F)
+    (aux_axis_origin 0 0)
+    (visible_elements FEFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -347,8 +347,8 @@
     (add_net "Net-(J1-Pad98)")
   )
 
-  (module Connector_Samtec:Samtec_HSMC_ASP-122952-01_P0.5mm_Vertical locked (layer B.Cu) (tedit 5C465B37) (tstamp 5C48377A)
-    (at 31.115 64.4652 270)
+  (module Connector_Samtec:Samtec_HSMC_ASP-122952-01_P0.5mm_Vertical (layer B.Cu) (tedit 5C465B37) (tstamp 5C48377A)
+    (at 5.715 39.0652 270)
     (descr http://suddendocs.samtec.com/prints/asp-122952-01-mkt.pdf)
     (tags "Samtec HSMC card mezzanine vertical")
     (path /5C4770A2)
@@ -835,7 +835,7 @@
   )
 
   (module MountingHole:MoutingHole_0.125in locked (layer F.Cu) (tedit 5C47B8BC) (tstamp 5C47E870)
-    (at 45.4152 28.9052)
+    (at 20.0152 3.5052)
     (attr virtual)
     (fp_text reference MH3 (at 0 -4.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -852,7 +852,7 @@
   )
 
   (module MountingHole:MoutingHole_0.125in locked (layer F.Cu) (tedit 5C47B8C3) (tstamp 5C47E862)
-    (at 45.4152 100.0252)
+    (at 20.0152 74.6252)
     (attr virtual)
     (fp_text reference MH4 (at 0 -4.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -869,7 +869,7 @@
   )
 
   (module MountingHole:MoutingHole_0.125in locked (layer F.Cu) (tedit 5C47BC48) (tstamp 5C47E854)
-    (at 31.115 100.0252)
+    (at 5.715 74.6252)
     (attr virtual)
     (fp_text reference MH2 (at 0 -4.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -886,7 +886,7 @@
   )
 
   (module MountingHole:MoutingHole_0.125in locked (layer F.Cu) (tedit 5C47B89D) (tstamp 5C47E6BE)
-    (at 31.115 28.9052)
+    (at 5.715 3.5052)
     (attr virtual)
     (fp_text reference MH1 (at 0 -4.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -903,23 +903,23 @@
   )
 
   (dimension 78.105 (width 0.3) (layer Cmts.User)
-    (gr_text "3.0760 in" (at 21.395 64.4525 90) (layer Cmts.User)
+    (gr_text "3.0760 in" (at -4.005 39.0525 90) (layer Cmts.User) (tstamp 5CBEB64A)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
-    (feature1 (pts (xy 24.765 25.4) (xy 22.908579 25.4)))
-    (feature2 (pts (xy 24.765 103.5304) (xy 22.908579 103.5304)))
-    (crossbar (pts (xy 23.495 103.5304) (xy 23.495 25.4)))
-    (arrow1a (pts (xy 23.495 25.4) (xy 24.081421 26.526504)))
-    (arrow1b (pts (xy 23.495 25.4) (xy 22.908579 26.526504)))
-    (arrow2a (pts (xy 23.495 103.5304) (xy 24.081421 102.378496)))
-    (arrow2b (pts (xy 23.495 103.5304) (xy 22.908579 102.378496)))
+    (feature1 (pts (xy -0.635 0) (xy -2.491421 0)))
+    (feature2 (pts (xy -0.635 78.1304) (xy -2.491421 78.1304)))
+    (crossbar (pts (xy -1.905 78.1304) (xy -1.905 0)))
+    (arrow1a (pts (xy -1.905 0) (xy -1.318579 1.126504)))
+    (arrow1b (pts (xy -1.905 0) (xy -2.491421 1.126504)))
+    (arrow2a (pts (xy -1.905 78.1304) (xy -1.318579 76.978496)))
+    (arrow2b (pts (xy -1.905 78.1304) (xy -2.491421 76.978496)))
   )
-  (gr_text "Host Board Edge\n5mm Verical Clearance" (at 46.99 64.4652 270) (layer Cmts.User)
+  (gr_text "Host Board Edge\n5mm Verical Clearance" (at 21.59 39.0652 270) (layer Cmts.User)
     (effects (font (size 1 1) (thickness 0.12)))
   )
-  (gr_line (start 48.8442 25.4) (end 48.8442 103.5304) (layer Cmts.User) (width 0.2))
-  (gr_line (start 25.4 103.5304) (end 50.8 103.5304) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 25.4 25.4) (end 25.4 103.5304) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 25.4 25.4) (end 50.8 25.4) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 23.4442 0) (end 23.4442 78.1304) (layer Cmts.User) (width 0.2))
+  (gr_line (start 0 78.1304) (end 25.4 78.1304) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 0 0) (end 0 78.1304) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 0 0) (end 25.4 0) (layer Edge.Cuts) (width 0.15))
 
 )
