@@ -52,6 +52,7 @@ set( template_lst
      BeagleBone-Black-Cape
      EuroCard160mmX100mm
      EuroCard160mmX100mm_holes
+     Hammond_1591XXL
      Hammond_1593K_Enclosure
      minnowboard-ls-lure
      raspberrypi_hat
