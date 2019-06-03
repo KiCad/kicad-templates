@@ -17,9 +17,6 @@ else()
     set( KICAD_TEMPLATE ${KICAD_DATA}/template )
 endif()
 
-set( KICAD_TEMPLATE_PROJECTS ${KICAD_TEMPLATE}/Projects )
-set( KICAD_TEMPLATE_WORKSHEETS ${KICAD_TEMPLATE}/Worksheets )
-
 mark_as_advanced( KICAD_DATA )
 
 
@@ -46,7 +43,7 @@ file (GLOB PROJECT_DIRS "Projects/*")
 
 # Copy them to destination
 foreach( tpl ${PROJECT_DIRS} )
-    install( DIRECTORY ${tpl} DESTINATION ${KICAD_TEMPLATE_PROJECTS} COMPONENT resources )
+    install( DIRECTORY ${tpl} DESTINATION ${KICAD_TEMPLATE} COMPONENT resources )
 endforeach()
 
 # The supplied worksheet templates
