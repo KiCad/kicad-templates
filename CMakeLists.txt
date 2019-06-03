@@ -17,6 +17,9 @@ else()
     set( KICAD_TEMPLATE ${KICAD_DATA}/template )
 endif()
 
+set( KICAD_TEMPLATE_PROJECTS ${KICAD_TEMPLATE}/Projects )
+set( KICAD_TEMPLATE_WORKSHEETS ${KICAD_TEMPLATE}/Worksheets )
+
 mark_as_advanced( KICAD_DATA )
 
 
@@ -38,35 +41,16 @@ add_custom_target( uninstall
 # Installed files.
 #================================================
 
-# Update this "template_lst" when you add or remove a project template
-#
-# Please keep them in alpahbetical order to make maintaining the list easier.
-set( template_lst
-     Arduino_Fio
-     Arduino_Mega_R3
-     Arduino_Micro
-     Arduino_Mini
-     Arduino_Nano
-     Arduino_Pro_Mini
-     Arduino_Uno_R3
-     BeagleBone-Black-Cape
-     EuroCard160mmX100mm
-     EuroCard160mmX100mm_holes
-     Hammond_1593K_Enclosure
-     minnowboard-ls-lure
-     raspberrypi_hat
-     raspberrypi-gpio
-     raspberrypi-gpio-40pin
-     stm32f100-discovery-shield
-     ti-stellaris-boosterpack40_min
-    )
+# Select project template directories
+file (GLOB PROJECT_DIRS "Projects/*")
 
-foreach( tpl ${template_lst} )
-    install( DIRECTORY ${tpl} DESTINATION ${KICAD_TEMPLATE} COMPONENT resources )
+# Copy them to destination
+foreach( tpl ${PROJECT_DIRS} )
+    install( DIRECTORY ${tpl} DESTINATION ${KICAD_TEMPLATE_PROJECTS} COMPONENT resources )
 endforeach()
 
-# The supplied worksheet templates.
-file( GLOB kicad_wks_files "*.kicad_wks" )
+# The supplied worksheet templates
+file( GLOB_RECURSE kicad_wks_files "Worksheets/*.kicad_wks" )
 
 install( FILES ${kicad_wks_files}
     DESTINATION ${KICAD_TEMPLATE}
