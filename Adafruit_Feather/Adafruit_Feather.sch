@@ -1,0 +1,279 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5D4D715B
+P 1750 1150
+F 0 "J2" H 1750 1500 50  0000 C CNN
+F 1 "USB_B_Micro" V 1500 1150 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1900 1100 50  0001 C CNN
+F 3 "~" H 1900 1100 50  0001 C CNN
+	1    1750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D4DC006
+P 850 1500
+F 0 "#PWR0101" H 850 1250 50  0001 C CNN
+F 1 "GND" H 850 1350 50  0000 C CNN
+F 2 "" H 850 1500 50  0001 C CNN
+F 3 "" H 850 1500 50  0001 C CNN
+	1    850  1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0102
+U 1 1 5D4DC4E8
+P 850 900
+F 0 "#PWR0102" H 850 750 50  0001 C CNN
+F 1 "+BATT" H 850 1050 50  0000 C CNN
+F 2 "" H 850 900 50  0001 C CNN
+F 3 "" H 850 900 50  0001 C CNN
+	1    850  900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1450 850  1500
+Wire Wire Line
+	850  950  850  900 
+$Comp
+L Connector_Generic:Conn_01x12 J4
+U 1 1 5D4E69E8
+P 3750 1500
+F 0 "J4" H 3750 2100 50  0000 C CNN
+F 1 "Conn_Right" V 3850 1300 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 3750 1500 50  0001 C CNN
+F 3 "~" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J3
+U 1 1 5D4E7BAF
+P 3100 1700
+F 0 "J3" H 3100 2500 50  0000 C CNN
+F 1 "Conn_Left" V 3200 1700 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 3100 1700 50  0001 C CNN
+F 3 "~" H 3100 1700 50  0001 C CNN
+	1    3100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1000 2800 1000
+Wire Wire Line
+	2900 1100 2850 1100
+Wire Wire Line
+	2900 1200 2800 1200
+Wire Wire Line
+	2900 1300 2850 1300
+Wire Wire Line
+	2900 1400 2800 1400
+Wire Wire Line
+	2900 1500 2800 1500
+Wire Wire Line
+	2900 1600 2800 1600
+Wire Wire Line
+	2900 1700 2800 1700
+Wire Wire Line
+	2900 1800 2800 1800
+Wire Wire Line
+	2900 1900 2800 1900
+Wire Wire Line
+	2900 2000 2800 2000
+Wire Wire Line
+	2900 2100 2800 2100
+Wire Wire Line
+	2900 2200 2800 2200
+Wire Wire Line
+	2900 2300 2800 2300
+Wire Wire Line
+	2900 2400 2800 2400
+Wire Wire Line
+	2900 2500 2800 2500
+Wire Wire Line
+	3950 1000 4000 1000
+Text Label 2800 1000 2    50   ~ 0
+~RST~
+Text Label 2800 1200 2    50   ~ 0
+Aref
+Text Label 2800 1400 2    50   ~ 0
+A0
+Text Label 2800 1500 2    50   ~ 0
+A1
+Text Label 2800 1600 2    50   ~ 0
+A2
+Text Label 2800 1700 2    50   ~ 0
+A3
+Text Label 2800 1800 2    50   ~ 0
+A4
+Text Label 2800 1900 2    50   ~ 0
+A5
+Text Label 2800 2000 2    50   ~ 0
+SCK
+Text Label 2800 2100 2    50   ~ 0
+MOSI
+Text Label 2800 2200 2    50   ~ 0
+MISO
+Text Label 2800 2300 2    50   ~ 0
+RX
+Text Label 2800 2400 2    50   ~ 0
+TX
+Text Label 2800 2500 2    50   ~ 0
+MISC
+$Comp
+L power:+BATT #PWR0103
+U 1 1 5D53E0CA
+P 4000 950
+F 0 "#PWR0103" H 4000 800 50  0001 C CNN
+F 1 "+BATT" H 4000 1100 50  0000 C CNN
+F 2 "" H 4000 950 50  0001 C CNN
+F 3 "" H 4000 950 50  0001 C CNN
+	1    4000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0104
+U 1 1 5D53E609
+P 4250 950
+F 0 "#PWR0104" H 4250 800 50  0001 C CNN
+F 1 "VBUS" H 4250 1100 50  0000 C CNN
+F 2 "" H 4250 950 50  0001 C CNN
+F 3 "" H 4250 950 50  0001 C CNN
+	1    4250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0105
+U 1 1 5D53EAFC
+P 2100 900
+F 0 "#PWR0105" H 2100 750 50  0001 C CNN
+F 1 "VBUS" H 2100 1050 50  0000 C CNN
+F 2 "" H 2100 900 50  0001 C CNN
+F 3 "" H 2100 900 50  0001 C CNN
+	1    2100 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 950  2100 950 
+Wire Wire Line
+	2100 950  2100 900 
+Wire Wire Line
+	1750 1550 1750 1600
+Wire Wire Line
+	1750 1600 1700 1600
+Wire Wire Line
+	1650 1600 1650 1550
+Wire Wire Line
+	1700 1600 1700 1650
+Connection ~ 1700 1600
+Wire Wire Line
+	1700 1600 1650 1600
+$Comp
+L power:GND #PWR0106
+U 1 1 5D54094A
+P 1700 1650
+F 0 "#PWR0106" H 1700 1400 50  0001 C CNN
+F 1 "GND" H 1700 1500 50  0000 C CNN
+F 2 "" H 1700 1650 50  0001 C CNN
+F 3 "" H 1700 1650 50  0001 C CNN
+	1    1700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5D541790
+P 2850 900
+F 0 "#PWR0107" H 2850 750 50  0001 C CNN
+F 1 "+3.3V" H 2850 1050 50  0000 C CNN
+F 2 "" H 2850 900 50  0001 C CNN
+F 3 "" H 2850 900 50  0001 C CNN
+	1    2850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1300 2850 2550
+$Comp
+L power:GND #PWR0108
+U 1 1 5D545285
+P 2850 2550
+F 0 "#PWR0108" H 2850 2300 50  0001 C CNN
+F 1 "GND" H 2850 2400 50  0000 C CNN
+F 2 "" H 2850 2550 50  0001 C CNN
+F 3 "" H 2850 2550 50  0001 C CNN
+	1    2850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 900  2850 1100
+Wire Wire Line
+	4000 1000 4000 950 
+Wire Wire Line
+	4250 950  4250 1200
+Wire Wire Line
+	3950 1200 4250 1200
+Text Label 4000 1900 0    50   ~ 0
+GPIO05
+Text Label 4000 1800 0    50   ~ 0
+GPIO06
+Text Label 4000 1700 0    50   ~ 0
+GPIO09
+Text Label 4000 1600 0    50   ~ 0
+GPIO10
+Text Label 4000 1500 0    50   ~ 0
+GPIO11
+Text Label 4000 1400 0    50   ~ 0
+GPIO12
+Text Label 4000 1300 0    50   ~ 0
+GPIO13
+Text Label 4000 2000 0    50   ~ 0
+SCL
+Text Label 4000 2100 0    50   ~ 0
+SDA
+Wire Wire Line
+	3950 2100 4000 2100
+Wire Wire Line
+	3950 2000 4000 2000
+Wire Wire Line
+	3950 1900 4000 1900
+Wire Wire Line
+	3950 1800 4000 1800
+Wire Wire Line
+	3950 1700 4000 1700
+Wire Wire Line
+	3950 1600 4000 1600
+Wire Wire Line
+	3950 1500 4000 1500
+Wire Wire Line
+	3950 1400 4000 1400
+Wire Wire Line
+	3950 1300 4000 1300
+Wire Wire Line
+	3950 1100 4000 1100
+Text Label 4000 1100 0    50   ~ 0
+EN
+$Comp
+L Connector_Generic:Conn_02x01 J1
+U 1 1 5D4DC9A5
+P 850 1250
+F 0 "J1" V 1000 1350 50  0000 L CNN
+F 1 "Conn_Battery" H 900 1150 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical" H 850 1250 50  0001 C CNN
+F 3 "~" H 850 1250 50  0001 C CNN
+	1    850  1250
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

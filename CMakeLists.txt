@@ -42,6 +42,7 @@ add_custom_target( uninstall
 #
 # Please keep them in alpahbetical order to make maintaining the list easier.
 set( template_lst
+     Adafruit_Feather
      Arduino_Fio
      Arduino_Mega_R3
      Arduino_Micro
