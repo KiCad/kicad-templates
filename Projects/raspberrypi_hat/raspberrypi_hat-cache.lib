@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x02
+# Connector_Generic_Conn_01x02
 #
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -20,11 +20,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_02x02_Odd_Even
+# Connector_Generic_Conn_02x02_Odd_Even
 #
-DEF Connector_Generic:Conn_02x02_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x02_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 100 50 H V C CNN
-F1 "Connector_Generic:Conn_02x02_Odd_Even" 50 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_02x02_Odd_Even" 50 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -43,15 +43,14 @@ X Pin_4 4 300 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
  R_*
 $ENDFPLIST
 DRAW
@@ -61,27 +60,26 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Mechanical:Mounting_Hole
+# Mechanical_MountingHole
 #
-DEF Mechanical:Mounting_Hole MK 0 40 Y Y 1 F N
-F0 "MK" 0 200 50 H V C CNN
-F1 "Mechanical:Mounting_Hole" 0 125 50 H V C CNN
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Mounting?Hole*
- Hole*
+ MountingHole*
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -90,11 +88,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# raspberrypi_hat:CAT24C32
+# raspberrypi_hat_CAT24C32
 #
-DEF raspberrypi_hat:CAT24C32 U 0 30 Y Y 1 F N
+DEF raspberrypi_hat_CAT24C32 U 0 30 Y Y 1 F N
 F0 "U" -350 350 50 H V C CNN
-F1 "raspberrypi_hat:CAT24C32" 250 350 50 H V C CNN
+F1 "raspberrypi_hat_CAT24C32" 250 350 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -113,11 +111,11 @@ X WP 7 -500 -200 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# raspberrypi_hat:DMG2305UX
+# raspberrypi_hat_DMG2305UX
 #
-DEF raspberrypi_hat:DMG2305UX Q 0 0 N Y 1 F N
+DEF raspberrypi_hat_DMG2305UX Q 0 0 N Y 1 F N
 F0 "Q" -100 150 50 H V R CNN
-F1 "raspberrypi_hat:DMG2305UX" 500 150 50 H V R CNN
+F1 "raspberrypi_hat_DMG2305UX" 500 150 50 H V R CNN
 F2 "" 200 195 50 H V C CNN
 F3 "" -100 0 50 H V C CNN
 $FPLIST
@@ -150,11 +148,11 @@ X D 3 0 250 150 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# raspberrypi_hat:DMMT5401
+# raspberrypi_hat_DMMT5401
 #
-DEF raspberrypi_hat:DMMT5401 Q 0 0 Y Y 2 F N
+DEF raspberrypi_hat_DMMT5401 Q 0 0 Y Y 2 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "raspberrypi_hat:DMMT5401" 200 0 50 H V L CNN
+F1 "raspberrypi_hat_DMMT5401" 200 0 50 H V L CNN
 F2 "SOT-26" 200 -75 50 H V L CIN
 F3 "" 0 0 50 H V L CNN
 $FPLIST
@@ -176,15 +174,15 @@ X E 5 100 -200 100 U 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# raspberrypi_hat:OX40HAT
+# raspberrypi_hat_OX40HAT
 #
-DEF raspberrypi_hat:OX40HAT J 0 40 Y Y 1 F N
+DEF raspberrypi_hat_OX40HAT J 0 40 Y Y 1 F N
 F0 "J" 350 100 50 H V C CNN
-F1 "raspberrypi_hat:OX40HAT" -300 100 50 H V C CNN
+F1 "raspberrypi_hat_OX40HAT" -300 100 50 H V C CNN
 F2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" 0 200 50 H I C CNN
 F3 "" -700 0 50 H V C CNN
 DRAW
-S -400 50 400 -1950 0 1 0 N
+S -400 50 400 -1950 0 1 0 f
 X P3V3 1 -600 0 200 R 50 50 1 1 B
 X BCM15 10 600 -400 200 L 50 50 1 1 B
 X BCM17 11 -600 -500 200 R 50 50 1 1 B

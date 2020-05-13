@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:raspberrypi_hat-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Mechanical:Mounting_Hole H1
+L Mechanical:MountingHole H1
 U 1 1 5834BC4A
 P 5650 6000
 F 0 "H1" H 5500 6100 60  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 5550 6000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole H2
+L Mechanical:MountingHole H2
 U 1 1 5834BCDF
 P 6650 6000
 F 0 "H2" H 6500 6100 60  0000 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 6550 6000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole H3
+L Mechanical:MountingHole H3
 U 1 1 5834BD62
 P 5650 6550
 F 0 "H3" H 5500 6650 60  0000 C CNN
@@ -48,7 +48,7 @@ F 3 "" H 5550 6550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole H4
+L Mechanical:MountingHole H4
 U 1 1 5834BDED
 P 6700 6550
 F 0 "H4" H 6550 6650 60  0000 C CNN
@@ -280,9 +280,9 @@ Wire Wire Line
 	3450 6050 2600 6050
 Wire Wire Line
 	2600 5950 3450 5950
-Text Label 3450 5950 2    60   ~ 0
-ID_SD_EEPROM_pu
 Text Label 3450 6050 2    60   ~ 0
+ID_SD_EEPROM_pu
+Text Label 3450 5950 2    60   ~ 0
 ID_SC_EEPROM_pu
 $Comp
 L Connector_Generic:Conn_01x02 J9
