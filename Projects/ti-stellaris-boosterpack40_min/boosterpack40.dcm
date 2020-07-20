@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Ti_Booster_40_J1
+F https://www.ti.com/lit/pdf/slaa542
+$ENDCMP
+#
+$CMP Ti_Booster_40_J2
+F https://www.ti.com/lit/pdf/slaa542
+$ENDCMP
+#
+$CMP Ti_Booster_40_J3
+F https://www.ti.com/lit/pdf/slaa542
+$ENDCMP
+#
+$CMP Ti_Booster_40_J4
+F https://www.ti.com/lit/pdf/slaa542
+$ENDCMP
+#
+#End Doc Library
