@@ -71,7 +71,7 @@
   (tbtext "Αναθ." (name text19:Text) (pos 50 7) (font (linewidth 0.18) (size 2 2)))
   (tbtext "Ημερομηνία" (name text20:Text) (pos 41 7) (font (linewidth 0.18) (size 2 2)))
   (tbtext "Γλώσ." (name text21:Text) (pos 17.5 7) (font (linewidth 0.18) (size 2 2)))
-  (tbtext "Φύλλο" (name text22:Text) (pos 9 7) (font (linewidth 0.18) (size 2 2)))
+  (tbtext "Σελ." (name text22:Text) (pos 9 7) (font (linewidth 0.18) (size 2 2)))
   (tbtext %Y (name text23:Text) (pos 164 9) (font (linewidth 0.35) (size 2.3 2.3)) (justify center))
   (tbtext %C1 (name text24:Text) (pos 105 21) (font (linewidth 0.35) (size 2.3 2.3)))
   (tbtext %T (name text25:Text) (pos 78.5 8) (font (linewidth 0.35) (size 2.3 2.3)) (justify center))
