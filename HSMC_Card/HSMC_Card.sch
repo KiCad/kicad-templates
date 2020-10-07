@@ -1,0 +1,94 @@
+EESchema Schematic File Version 4
+LIBS:HSMC_Card-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:HSMC_Card_ASP J1
+U 1 1 5C4770A2
+P 2600 2700
+F 0 "J1" H 1750 4400 50  0000 L CNN
+F 1 "HSMC_Card_ASP" H 3450 1000 50  0000 R CNN
+F 2 "Connector_Samtec:Samtec_HSMC_ASP-122952-01_P0.5mm_Vertical" H 1700 4550 50  0001 C CNN
+F 3 "" H 2750 4550 50  0001 C CNN
+	1    2600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:HSMC_Card_ASP J1
+U 2 1 5C477142
+P 5800 2700
+F 0 "J1" H 5800 4500 50  0000 C CNN
+F 1 "HSMC_Card_ASP" H 5800 4400 50  0000 C CNN
+F 2 "Connector_Samtec:Samtec_HSMC_ASP-122952-01_P0.5mm_Vertical" H 4900 4550 50  0001 C CNN
+F 3 "" H 5950 4550 50  0001 C CNN
+	2    5800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:HSMC_Card_ASP J1
+U 3 1 5C4771DF
+P 9000 2700
+F 0 "J1" H 9000 4500 50  0000 C CNN
+F 1 "HSMC_Card_ASP" H 9000 4400 50  0000 C CNN
+F 2 "Connector_Samtec:Samtec_HSMC_ASP-122952-01_P0.5mm_Vertical" H 8100 4550 50  0001 C CNN
+F 3 "" H 9150 4550 50  0001 C CNN
+	3    9000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5C47757A
+P 2400 900
+F 0 "#PWR01" H 2400 750 50  0001 C CNN
+F 1 "+3V3" H 2415 1073 50  0000 C CNN
+F 2 "" H 2400 900 50  0001 C CNN
+F 3 "" H 2400 900 50  0001 C CNN
+	1    2400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR02
+U 1 1 5C4775E4
+P 2800 900
+F 0 "#PWR02" H 2800 750 50  0001 C CNN
+F 1 "+12V" H 2815 1073 50  0000 C CNN
+F 2 "" H 2800 900 50  0001 C CNN
+F 3 "" H 2800 900 50  0001 C CNN
+	1    2800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C477779
+P 2600 4500
+F 0 "#PWR03" H 2600 4250 50  0001 C CNN
+F 1 "GND" H 2605 4327 50  0000 C CNN
+F 2 "" H 2600 4500 50  0001 C CNN
+F 3 "" H 2600 4500 50  0001 C CNN
+	1    2600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5C4777E4
+P 9000 4500
+F 0 "#PWR04" H 9000 4250 50  0001 C CNN
+F 1 "GND" H 9005 4327 50  0000 C CNN
+F 2 "" H 9000 4500 50  0001 C CNN
+F 3 "" H 9000 4500 50  0001 C CNN
+	1    9000 4500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
