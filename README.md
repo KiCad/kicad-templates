@@ -1,3 +1,2 @@
-# KiCad Templates
-
-This repository contains the official KiCad project and worksheet templates.
+## :warning: 301 Moved Permanently
+Location: https://gitlab.com/kicad/libraries/kicad-templates
