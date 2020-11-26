@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:raspberrypi_hat-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -422,8 +421,6 @@ Text Label 800  2650 0    60   ~ 0
 GND
 Wire Wire Line
 	2000 2650 800  2650
-Text Label 800  2250 0    60   ~ 0
-P3V3_HAT
 Wire Wire Line
 	2000 2250 800  2250
 Wire Wire Line
@@ -450,12 +447,8 @@ Text Label 4400 2450 2    60   ~ 0
 GND
 Wire Wire Line
 	3200 2450 4400 2450
-Text Label 4400 2350 2    60   ~ 0
-P5V_HAT
 Wire Wire Line
 	3200 2350 4400 2350
-Text Label 4400 2250 2    60   ~ 0
-P5V_HAT
 Wire Wire Line
 	3200 2250 4400 2250
 Wire Wire Line
@@ -538,4 +531,10 @@ Wire Wire Line
 	1550 6050 1550 6100
 Wire Wire Line
 	1050 6100 1150 6100
+Text Label 4400 2250 2    60   ~ 0
+P5V
+Text Label 4400 2350 2    60   ~ 0
+P5V
+Text Label 800  2250 0    60   ~ 0
+P3V3
 $EndSCHEMATC
